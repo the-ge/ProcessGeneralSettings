@@ -22,14 +22,34 @@
 	border: 1px solid #cd0a0a !important;
 }
 
-.asmListItemStatus a {
-	border: none !important;
-	right: auto;
-	left: 0;
+.asmListItem {
+	padding-left: 25px;
 }
 
-.asmListItemStatus span.ui-button-text {
-	padding: 0 3px;
+.asmListItemStatus {
+	justify-items: center;
+	align-content: center;
+	right: auto;
+	left: 0;
+	width: 25px;
+	max-height: 100%;
+}
+
+.asmListItemStatus.asmListItemStatus {
+	display: grid;
+	padding: 0;
+}
+
+.asmListItemStatus .ui-button {
+	line-height: unset;
+	margin: 0;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 3px 7px;
+}
+
+.asmListItemStatus.asmListItemStatus i {
+	margin: 0;
 }
 
 .asmListItemLabel{
@@ -38,12 +58,6 @@
 
 .asmListItemHandle {
 	left: 30px !important;
-}
-
-.asmListItemStatus {
-	right: auto;
-	left: 0;
-	width: 25px;
 }
 
 .trash {
