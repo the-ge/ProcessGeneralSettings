@@ -1,7 +1,7 @@
 
 $(window).load(function() {
     $('.asmListItemStatus').append('<a class="edit" href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>');
-    $('#asmContainer0').prepend('<span class="trash">Trash</span>');
+    //$('#asmContainer0').prepend('<span class="trash">Trash</span>');
 
     $('#wrap_ASMOrder ol').after('<a id="addNew" href="'+window.location.href+'&addNewRow=13"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add</a>');
 
@@ -139,6 +139,7 @@ $(window).load(function() {
 	    	dialog = $(form).dialog({
 	      		autoOpen: false,
 	      		modal: true,
+			title: 'New setting',
 	      		buttons: {
 	        		"Save": editFields,
 	        		Cancel: function() {
