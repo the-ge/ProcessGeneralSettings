@@ -180,7 +180,7 @@ class GeneralSettings extends Process implements Module, ConfigurableModule {
 		$field->attr('id', 'settings_import');
 		$field->label = __("Import Settings Config", __FILE__);
 		$field->description = __('Paste a JSON array of settings here - Warning - pasting here will clear all saved settings in the Process Module.', __FILE__);
-		$field->attr('value', $data['settings_import']); 
+		$field->attr('value', $data['settings_import'] ?? ''); 
 		$field->collapsed = Inputfield::collapsedYes;
 		$fields->append($field);
 
